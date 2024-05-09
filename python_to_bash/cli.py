@@ -1,4 +1,5 @@
 import argparse
+import sys
 import os
 from python_to_bash.converter import python_to_bash, validate_python_code, cleanup_temp_file
 
