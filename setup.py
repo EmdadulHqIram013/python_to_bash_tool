@@ -10,13 +10,12 @@ setup(
         ],
     },
     install_requires=[
-        # Add any dependencies here
     ],
     include_package_data=True,
     description="A tool to convert Python scripts to Bash scripts.",
     author="Emdadul Haque Iram",
     author_email="iramhq14@gmail.com",
-    url="https://github.com/EmdadulHqIram013/python_to_bash_tool",  # Replace with your URL
+    url="https://github.com/EmdadulHqIram013/python_to_bash_tool",  
 )
 
 
