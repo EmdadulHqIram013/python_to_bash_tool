@@ -7,6 +7,15 @@ def validate_python_code(code):
         compile(code, '<string>', 'exec')
         return True, ""
     except SyntaxError as e:
+import os
+import tempfile
+import subprocess
+
+def validate_python_code(code):
+    try:
+        compile(code, '<string>', 'exec')
+        return True, ""
+    except SyntaxError as e:
         return False, str(e)
 
 def python_to_bash(python_code, save_directory):
@@ -19,16 +28,7 @@ def python_to_bash(python_code, save_directory):
     bash_script_file = os.path.join(save_directory, "converted_script.sh")
 
     bash_script = f"""#!/bin/bash
-
-# Run the Python code
-function run_python_code() {{
-    python3 {temp_file.name}
-}}
-
-# Execute the function
-if [[ "${{BASH_SOURCE[0]}}" == "${{0}}" ]]; then
-    run_python_code
-fi
+python3 {temp_file.name}
 """
 
     with open(bash_script_file, "w") as f:
