@@ -35,6 +35,3 @@ A simple command-line tool to convert Python scripts to Bash scripts.
 6. Run the Tool:
    ```bash
     pytobash
-  
-
-
