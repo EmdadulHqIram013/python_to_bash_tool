@@ -23,9 +23,15 @@ A simple command-line tool to convert Python scripts to Bash scripts.
 3. Install the Tool with --user Flag::
    ```bash
    pip install --user .
-4. Edit your PATH variable
+
+4. Run this command for Path 
    ```bash
+   
+   export PATH=$PATH:~/.local/bin
+   
+5.Edit your PATH variable 
+   ```bash
+
    echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
-5.    4. Run the Tool:
-   ```bash
-    pytobash
+pytobash
+
