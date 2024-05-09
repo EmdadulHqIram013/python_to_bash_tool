@@ -15,6 +15,7 @@ A simple command-line tool to convert Python scripts to Bash scripts.
 
    ```bash
    git clone https://github.com/EmdadulHqIram013/python_to_bash_tool.git
+   ```bash
    cd python_to_bash_tool
 
 2. Install the Tool with --user Flag::
