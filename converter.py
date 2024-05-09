@@ -7,15 +7,6 @@ def validate_python_code(code):
         compile(code, '<string>', 'exec')
         return True, ""
     except SyntaxError as e:
-import os
-import tempfile
-import subprocess
-
-def validate_python_code(code):
-    try:
-        compile(code, '<string>', 'exec')
-        return True, ""
-    except SyntaxError as e:
         return False, str(e)
 
 def python_to_bash(python_code, save_directory):
