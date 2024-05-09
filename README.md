@@ -12,7 +12,6 @@ A simple command-line tool to convert Python scripts to Bash scripts.
 ## Installation and Execution Instructions:
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/EmdadulHqIram013/python_to_bash_tool.git
 
@@ -29,9 +28,13 @@ A simple command-line tool to convert Python scripts to Bash scripts.
    
    export PATH=$PATH:~/.local/bin
    
-5.Edit your PATH variable 
+5. Edit your PATH variable
    ```bash
-
    echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
-pytobash
+
+6. Run the Tool:
+   ```bash
+    pytobash
+  
+
 
